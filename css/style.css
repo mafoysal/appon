@@ -1,0 +1,914 @@
+/* ==========================
+        common css start
+=========================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:hover,
+a::after {
+  text-decoration: none;
+}
+
+.clr {
+  clear: both;
+}
+
+.title {
+  text-align: center;
+}
+
+.title .txt h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+}
+/* ==========================
+        common css end
+=========================*/
+
+/* ==========================
+        nav css start
+=========================*/
+nav {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 9999;
+}
+
+nav .logo {
+  width: 18%;
+}
+
+nav .nav-item {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .btn {
+  width: 12%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .btn a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #744fa0;
+}
+
+nav .nav-item ul li {
+  display: inline-block;
+  margin-left: 45px;
+}
+nav .nav-item ul li a {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.4s;
+  position: relative;
+}
+
+nav .nav-item ul li a:after {
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -15px;
+  left: 0;
+  background-color: #744fa0;
+  content: "";
+  transition: 0.4s;
+}
+
+nav .nav-item ul li a:hover {
+  color: #744fa0;
+}
+
+nav .nav-item ul li a:hover:after {
+  width: 100%;
+}
+nav .nav-item ul li .active {
+  color: #744fa0;
+}
+
+nav .nav-item ul li .active:after {
+  width: 100%;
+}
+/* ==========================
+        nav css end
+=========================*/
+
+/* ==========================
+        banner css start
+=========================*/
+#banner-part .banner-slider .banner {
+  background: url(../img/banner.png) no-repeat center;
+  background-size: cover;
+}
+#banner-part .banner-slider .banner .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: right;
+  padding-top: 245px;
+  padding-bottom: 126px;
+}
+
+#banner-part .banner-slider .banner .overlay h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "raleway", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+#banner-part .banner-slider .banner .overlay h1::first-letter {
+  color: #744fa0;
+}
+#banner-part .banner-slider .banner .overlay h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  position: relative;
+}
+#banner-part .banner-slider .banner .overlay h3:after {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+  content: "";
+}
+
+#banner-part .banner-slider .banner .overlay p {
+  width: 300px;
+  margin-left: 470px;
+  margin-left: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: -10px;
+}
+
+#banner-part .banner-slider .banner .overlay a {
+  display: inline-block;
+  color: #fff;
+  background-color: #744fa0;
+  padding: 10px 15px 10px 56px;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+#banner-part .banner-slider .banner .overlay i {
+  font-size: 33px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+#banner-part .banner-slider .banner .overlay .on {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+#banner-part .banner-slider .banner .overlay .store {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#banner-part .banner-slider .banner .overlay a:hover {
+  background-color: #f1f1f1;
+  color: #353535;
+}
+
+#banner-part .slick-dots {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+#banner-part .slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+}
+
+#banner-part .slick-dots li button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #744fa0;
+  content: "";
+  opacity: 0;
+}
+
+#banner-part .slick-dots .slick-active button {
+  border-color: #744f74;
+}
+
+#banner-part .slick-dots .slick-active button::after {
+  opacity: 1;
+}
+#banner-part {
+  position: relative;
+}
+#banner-part .home {
+  position: absolute;
+  top: 47%;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+/* ==========================
+        banner css end
+=========================*/
+
+/* ==========================
+        about css start
+=========================*/
+#about-part {
+  margin-top: 30px;
+}
+#about-part .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-part .text {
+  width: 69%;
+  margin-top: 50px;
+  margin-left: 35px;
+  margin-right: 100px;
+}
+#about-part .text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#about-part .text .two {
+  margin-top: 15px;
+}
+#about-part .img {
+  width: 29%;
+}
+/* ==========================
+        about css end
+=========================*/
+
+/* ==========================
+        service css end
+=========================*/
+#service-part {
+  margin-top: 30px;
+  background-color: #f1f1f1;
+}
+#service-part .title .txt {
+  padding-top: 20px;
+}
+#service-part .left {
+  width: 30%;
+  margin-top: 50px;
+}
+
+#service-part .left a {
+  color: #000;
+  padding-left: 45px;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 34px;
+}
+#service-part .left a::after {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 270px;
+  height: 1px;
+  background: #000;
+  content: "";
+  transition: 0.4s;
+}
+#service-part .left .active {
+  background: transparent;
+  color: #744fa0;
+}
+#service-part .left .active::after {
+  background-color: #744fa0;
+  width: 300px;
+}
+#service-part .left a:last-child:after {
+  width: 0;
+}
+#service-part .left a span {
+  display: block;
+}
+#service-part .left i {
+  font-size: 30px;
+  position: absolute;
+  top: 13px;
+  left: 6px;
+}
+#service-part .left .phn {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#service-part .left .sqr {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#service-part .right {
+  width: 70%;
+  margin-top: 58px;
+}
+
+#service-part .right .img {
+  margin-left: 85px;
+}
+
+#service-part .right .text {
+  text-align: right;
+  margin-top: 80px;
+  margin-left: auto;
+}
+#service-part .right .text h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#service-part .right .text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  width: 375px;
+}
+/* ==========================
+        service css end
+=========================*/
+/* ==========================
+        screenshot css start
+=========================*/
+#screenshot-part {
+  margin-top: 45px;
+}
+#screenshot-part .title {
+  margin-bottom: 30px;
+}
+#screenshot-part .slick-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+#screeenshot-part .slick-dots ul {
+  padding-left: 5px;
+  transform: translateY(-30px);
+}
+#screenshot-part .slick-dots li {
+  display: inline-block;
+  margin: 0 10px;
+}
+#screenshot-part .slick-dots li button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  background: transparent;
+  position: relative;
+}
+
+#screenshot-part .slick-dots li button::after {
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* width: 6px;
+  height: 6px;
+  border-radius: 5px; */
+  background-color: #744fa0;
+  content: "";
+  opacity: 0;
+}
+
+#screenshot-part .slick-dots .slick-active button {
+  border-color: #744f74;
+}
+
+#sceenshot-part .slick-dots .slick-active button::after {
+  opacity: 1;
+}
+/* ==========================
+        screnshot css end
+=========================*/
+
+/* ==========================
+        service css end
+=========================*/
+#video-part .title {
+  margin-top: 100px;
+}
+#video-part .one {
+  margin-top: 20px;
+  background: url(../img/video.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#video-part .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 200px 0;
+  text-align: center;
+}
+
+#video-part .overlay a {
+  font-size: 45px;
+  color: #fff;
+}
+
+/* ==========================
+        service css end
+=========================*/
+
+/* ==========================
+        pricing css satrt
+=========================*/
+#pricing-part {
+  margin-top: 30px;
+}
+#pricing-part .main {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#pricing-part .item {
+  width: 24%;
+}
+#pricing-part .item h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+#pricing-part .item .round {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #f1f1f1;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pricing-part .item .round .digit span {
+  font-size: 45px;
+}
+#pricing-part .item .round p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+}
+#pricing-part .item ul {
+  background-color: #f1f1f1;
+  text-align: center;
+  margin-top: 20px;
+  padding: 25px 0;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+#pricing-part .item li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6a6a6a;
+  margin-bottom: 8px;
+}
+#pricing-part .button {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#pricing-part .button a {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transform: translateY(50%);
+  transition: 0.4s;
+}
+#pricing-part .item:hover h3 {
+  background-color: #744fa0;
+  color: #fff;
+}
+#pricing-part .item:hover a {
+  background-color: #744fa0;
+  border-color: #fff;
+  color: #fff;
+}
+/* ==========================
+        pricing css end
+=========================*/
+
+/* ==========================
+        team css start
+=========================*/
+#team-part {
+  margin-top: 100px;
+}
+#team-part .main {
+  justify-content: space-between;
+}
+
+#team-part .item {
+  margin-top: 50px;
+  width: 30%;
+  position: relative;
+  margin-bottom: 50px;
+}
+#team-part .item .img {
+  width: 100%;
+  position: relative;
+  transition: 0.4s;
+}
+#team-part .item .img img {
+  width: 100%;
+}
+#team-part .item .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team-part .item .img .overlay i {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.4s;
+}
+#team-part .item .text {
+  width: 100%;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  border-top: 0;
+}
+#team-part .item .text h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+#team-part .item .text span {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#team-part .item .text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+#team-part .item:hover .img {
+  margin-top: -20px;
+}
+#team-part .item .img .overlay:hover {
+  opacity: 1;
+  border-radius: 5px;
+}
+#team-part .item .img .overlay i:hover {
+  background-color: #1da1f2;
+  color: #fff;
+}
+#team-part .item:hover .text {
+  top: 93%;
+}
+/* ==========================
+        team css end
+=========================*/
+
+/* ==========================
+        feedback css start
+=========================*/
+#feedback-part {
+  margin-top: 100px;
+}
+#feedback-part .title {
+  margin-bottom: 50px;
+}
+#feedback-part .bg-cover {
+  background: url(../img/feedbackBG.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#feedback-part .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 80px 50px;
+}
+#feedback-part .overlay .host {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+#feedback-part .fb-text {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 40px 40px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+#feedback-part .fb-text .details p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+#feedback-part .fb-text .icon i {
+  font-size: 16px;
+  color: #744fa0;
+}
+#feedback-part .fb-text .details h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+#feedback-part .fb-text .details h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+#feedback-part .overlay .host .shape {
+  width: 35px;
+  height: 35px;
+  background-color: #f1f1f1;
+  position: absolute;
+  border-radius: 5px;
+  bottom: -33px;
+  left: 45%;
+  transform: translate(50%, -50%) rotate(135deg);
+  z-index: 2;
+}
+#feedback-part .fb-img {
+  width: 375px;
+  margin: 0 auto;
+}
+#feedback-part .fb-img .member {
+  width: 100px !important;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 15px 12px;
+  margin-top: 75px;
+  transition: 0.4s;
+}
+#feedback-part .fb-img .member img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#feedback-part .fb-img .member .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#feedback-part .fb-img .slick-center {
+  transform: scale(1.3);
+  border: 1px solid #744fa0;
+}
+#feedback-part .fb-img .slick-center .overlay {
+  opacity: 0;
+}
+#feedback-part .slick-dots {
+  text-align: center;
+  padding-left: 5px;
+  transform: translateY(30px);
+}
+#feedback-part .slick-dots li {
+  display: inline-block;
+  padding: 3px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+#feedback-part .slick-dots li button {
+  border-radius: 50%;
+  background-color: #744fa0;
+  border: 0;
+  color: transparent;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  font-size: 1px;
+  line-height: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  opacity: 0;
+}
+#feedback-part li .slick-active {
+  border-color: #744fa0;
+}
+#feedback-part .slick-dots li button .slick-active {
+  opacity: 1;
+}
+/* ==========================
+        feedback css end
+=========================*/
+
+/* ==========================
+        feedback css end
+=========================*/
+#contact-part {
+  margin-top: 100px;
+}
+#contact-part .title {
+  margin-bottom: 35px;
+}
+#contact-part .main {
+  justify-content: space-between;
+}
+#contact-part input {
+  width: 32%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+#contact-part input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+#contact-part .message {
+  margin-top: 20px;
+}
+#contact-part textarea {
+  width: 100%;
+  padding-left: 35px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  height: 195px;
+  resize: none;
+}
+#contact-part textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+#contact-part .btn {
+  display: block;
+  text-align: center;
+}
+#contact-part .btn button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #744fa0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* ==========================
+        feedback css end
+=========================*/
+
+/* ==========================
+        footer css start
+=========================*/
+#footer-part {
+  margin-top: 100px;
+  background-color: #353535;
+  padding-bottom: 35px;
+}
+#footer-part .logo {
+  padding-top: 20px;
+  text-align: center;
+}
+#footer-part .icon {
+  text-align: center;
+  padding-top: 30px;
+  color: #353535;
+}
+#footer-part .icon i {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 46px;
+  margin-right: 10px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+#footer-part .icon i:hover {
+  color: #fff;
+  background-color: #744fa0;
+}
+#footer-part .text {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+#footer-part .text span {
+  color: #744fa0;
+  text-transform: uppercase;
+}
+/* ==========================
+        footer css end
+=========================*/
